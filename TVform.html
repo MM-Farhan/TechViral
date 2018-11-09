@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="TV.css">
+    <!--<script type="text/javascript" src="Sign.js"></script>-->
+    
+
+    <title>TechViral</title>
+  </head>
+  <body>
+
+  <div>  
+  
+  
+
+    <div class="bg">
+      <h1 class="h1-tag"> TechViral</h1> 
+      
+    </div>
+
+    
+    <div class="">
+    <div class="topnav" id="myTopnav">
+      <a href=""></a>
+      <a href=""></a>
+      <a href="TV main.html">Home</a>
+      <a href="TV main.html">News</a>
+      <a href="TVreview.html">Reviews</a>
+      <a href="TVgallery.html">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <input type="text" placeholder="Search..">
+      <!--<button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-user"></span> Login
+      </button>-->
+
+    </div> 
+    </div>
+    <br>
+
+
+    <h1 style="text-align:center;">Login/Signup</h1>
+  <p style="color:red"><b>*Mandatory to fill</b></p>
+  
+
+  <form name="Signup" onsubmit="return validateForm()" method="post">
+    <table width="700x" name="Signup" onsubmit="return validateForm()" method="post">
+      <tr>
+        <td>
+          <label for="firstname">First name:</label>
+          
+        </td>
+        <td valign="top">
+          <input type="text" name="firstname">*
+          
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="lastname">Last name:</label>
+        </td>
+        <td valign="top">
+          <input type="text" name="lastname" onclick="fname()";>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="birthday">Birthday:</label>
+        </td>
+        <td valign="top">
+          <select name="day">
+            <option value="day">Day</option>
+            <option value="day">1</option>
+            <option value="day">2</option>
+            <option value="day">3</option>
+            <option value="day">4</option>
+            <option value="day">5</option>
+            <option value="day">6</option>
+            <option value="day">7</option>
+            <option value="day">8</option>
+            <option value="day">9</option>
+            <option value="day">10</option>
+            <option value="day">11</option>
+            <option value="day">12</option>
+            <option value="day">13</option>
+            <option value="day">14</option>
+            <option value="day">15</option>
+            
+          </select>
+          <select name="month">
+            <option value="month">Month</option>
+            <option value="month">January</option>
+            <option value="month">Febuary</option>
+            <option value="month">March</option>
+            <option value="month">April</option>
+            <option value="month">May</option>
+            
+          </select>
+          <select name="year">
+            <option value="year">Year</option>
+            <option value="year">1990</option>
+            <option value="year">1991</option>
+            <option value="year">1992</option>
+            <option value="year">1993</option>
+            <option value="year">1994</option>
+            <option value="year">1995</option>
+            <option value="year">1996</option>
+            
+          </select>
+      <tr>
+        <td>
+          <label for="username">Username:</label>
+          
+        </td>
+        <td valign="top">
+          <input type="text" name="username">*
+          <div id="name_error" class="val_error">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="email">E-mail:</label>
+        </td>
+        <td valign="top">
+          <input type="text" name="email">*
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td>
+          <label for="password">Password:</label>
+        </td>
+        <td valign="top">
+          <input type="password" name="password">*ss
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="repassword">Re-password:</label>
+        </td>
+        <td valign="top">
+          <input type="password" name="repassword">*
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type = "checkbox" name = "agree" value = "on">
+        </td>
+        <td>
+          I agree to the terms & conditions<br>
+        </td>
+      </tr>
+    </table><br><br>
+    <input style="color:yellow;background-color:black;" type="submit" value="Sign up" onclick="alert('Welcome')";><br><br>
+  </form>
+
+  <script type="text/javascript">
+
+
+
+  /*  function Check(form)
+    {
+      if (username.value == "")
+      {
+        alert("Please fill Mandatory field")
+      }
+
+
+    }
+*/
+    function validateForm() 
+  {
+    var x = document.forms["Signup"]["firstname"].value;
+    if (x == "") 
+    {
+        alert("Mandatory field must be filled out");
+        return false;
+    }
+  } 
+
+  function validateForm() 
+  {
+    var y = document.forms["Signup"]["username"].value;
+    if (y == "") 
+    {
+        alert("Mandatory field must be filled out");
+        return false;
+    }
+  } 
+
+  function validateForm() 
+  {
+    var z = document.forms["Signup"]["email"].value;
+    if (z == "") 
+    {
+        alert("Mandatory field must be filled out");
+        return false;
+    }
+  } 
+  
+
+  function validateForm() 
+  {
+    var p = document.forms["Signup"]["password"].value;
+    if (p == "") 
+    {
+        alert("Mandatory field must be filled out");
+        return false;
+    }
+  } 
+
+  function check()
+  {
+    var a= document.forms["Signup"]["password"].value;
+    var b= document.forms["Signup"]["repassword"].value;
+    if (a!=b)
+    {
+      alert("Password Dismatch");
+
+    }
+  }
+
+  function box()
+  {
+    if (document.Signup.agree.checked)
+    {
+      alert("You agreed the terms");
+
+    }
+    else
+    {
+      alert("Please agree the terms");
+    }
+  }
+
+  
+
+  </script>
+
+
+
+<div class="footer">
+      <p>Copyright © 2018 TechViral. All rights reserved.</p>
+
+      
+</div>
+   
+
+
+
+
+
+
+  </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
